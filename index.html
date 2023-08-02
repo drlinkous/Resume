@@ -19,23 +19,58 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-links">Home</a></li>
-                <li><a href="#" class="nav-links">Services</a></li>
-                <li><a href="#" class="nav-links">About Us</a></li>
-                <li><a href="#" class="nav-links">Contact</a></li>
-                <li><a href="#" class="nav-links nav-links-btn">Sign Up</a></li>
+                <li class="navbar__item"><a href="#home" class="nav-links" id="home-page">Home</a></li>
+                <li class="navbar__item"><a href="#about" class="nav-links" id="about-page">About Us</a></li>
+                <li class="navbar__item"><a href="#services" class="nav-links" id="services-page">Services</a></li>
+                <li class="navbar__item"><a href="#contact" class="nav-links" id="contact-page">Contact</a></li>
             </ul>
         </nav>
     </div>
+    <div class="hero" id="home">
+        <div class="hero__container">
+          <h1 class="hero__heading">Choose your <span>colors</span></h1>
+          <p class="hero__description">Unlimited Possibilities</p>
+          <button class="main__btn"><a href="#">Explore</a></button>
+        </div>
+      </div>
 
-    <div class="main">
-        <div class="main-container">
-            <div class="main content">
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__content">
                 <h1>Skyrocket you results</h1>
                 <p>Luxco allows you to fully automate your business so you can focus on what's important</p>
+                <button class="main__btn"><a href="#">Schedule Call</a></button>
             </div>
         </div>
     </div>
+
+        <!-- Services Section -->
+        <div class="services" id="services">
+            <h1>Our Services</h1>
+            <div class="services__wrapper">
+              <div class="services__card">
+                <h2>Custom Colorways</h2>
+                <p>AI Powered technology</p>
+                <div class="services__btn"><button>Get Started</button></div>
+              </div>
+              <div class="services__card">
+                <h2>Are you Ready?</h2>
+                <p>Take the lepa</p>
+                <div class="services__btn"><button>Get Started</button></div>
+              </div>
+              <div class="services__card">
+                <h2>Full Gradients</h2>
+                <p>100 Combinations</p>
+                <div class="services__btn"><button>Get Started</button></div>
+              </div>
+              <div class="services__card">
+                <h2>Infinite Choices</h2>
+                <p>1000's of colors</p>
+                <div class="services__btn"><button>Get Started</button></div>
+              </div>
+            </div>
+          </div>
+  
     <script src="app.js"></script>
 </body>
 </html>
