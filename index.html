@@ -4,64 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Website Navbar</title>
 </head>
 <body>
-    <div class="nav-container">
+    <div class="nav_container">
         <nav class="navbar">
-            <h1 id="navbar-logo">LUXCO</h1>
-            <div class="menu-toggle" id="mobile-menu">
+            <h1 id="navbar_logo">Resume</h1>
+            <div class="menu_toggle" id="mobile_menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-menu">
-                <li class="navbar__item"><a href="#about" class="nav-links" id="about-page">About Us</a></li>
-                <li class="navbar__item"><a href="#services" class="nav-links" id="services-page">Services</a></li>
-                <li class="navbar__item"><a href="#contact" class="nav-links" id="contact-page">Contact</a></li>
+            <ul class="nav_menu">
+                <li class="navbar_item"><a href="#about" class="nav_links" id="about-page">About Me</a></li>
+                <li class="navbar_item"><a href="#education" class="nav_links" id="education-page">Education</a></li>
+                <li class="navbar_item"><a href="#experience" class="nav_links" id="exp-page">Experience</a></li>
+                <li class="navbar_item"><a href="#services" class="nav_links" id="services-page">Skills & Abilities</a></li>
+                <li class="navbar_item"><a href="#contact" class="nav_links" id="contact-page">Contact</a></li>
             </ul>
         </nav>
     </div>
-
+    <!-- About Section -->
     <div class="main" id="about">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>Skyrocket you results</h1>
-                <p>Luxco allows you to fully automate your business so you can focus on what's important</p>
-                <button class="main__btn"><a href="#">Schedule Call</a></button>
+        <div class="main_container">
+            <div class="main_content">
+                <h1>About Me</h1>
+                <p>I am kind and team player oriented and I specialize in coding, computer hardware and cloud computing. I have worked in customer service with clients and completed documentation when finished with their services.</p>
             </div>
         </div>
     </div>
 
+
+    <!-- Education -->
+    <div class="edu" id="edu">
+      <div class="edu_container">
+        <div class="edu_content">
+          <h1>Education</h1>
+          <p>INFORMATION TECHNOLOGY AAS| GRADUATED MAY 2023 |NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA, 24084</p>
+        </div>
+      </div>
+    </div>
+
+            <!-- Experiance Section -->
+            <div class="exp" id="exp">
+              <h1>Experience</h1>
+              <div class="exp_wrapper">
+                <div class="exp_card">
+                  <h2>COMPUTER TECHNICIAN II | NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA | JUNE 2021 – AUGUST 2021 (UNITED WAY INTERNSHIP)</h2>
+                  <h3>-Replaced and Imaged computers</h3>
+                    <h4>-Worked in Adobe Systems</h4>
+                    <h5>-Organized and Labeled Hardware</h5>
+                </div>
+                <div class="exp_card">
+                  <h2>COMPUTER TECHNICIAN | NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA | JUNE 2019 – AUGUST 2019 (UNITED WAY INTERNSHIP)</h2>
+                  <h3>-Replaced and Imaged computers<h3>
+                </div>
+              </div>
+            </div>
+
         <!-- Services Section -->
         <div class="services" id="services">
-            <h1>Our Services</h1>
-            <div class="services__wrapper">
-              <div class="services__card">
-                <h2>Custom Colorways</h2>
-                <p>AI Powered technology</p>
-                <div class="services__btn"><button>Get Started</button></div>
+            <h1>Skills & Abilities</h1>
+            <div class="services_wrapper">
+              <div class="services_card">
+                <h2>Coding</h2>
               </div>
-              <div class="services__card">
-                <h2>Are you Ready?</h2>
-                <p>Take the lepa</p>
-                <div class="services__btn"><button>Get Started</button></div>
+              <div class="services_card">
+                <h2>IT Hardware</h2>
               </div>
-              <div class="services__card">
-                <h2>Full Gradients</h2>
-                <p>100 Combinations</p>
-                <div class="services__btn"><button>Get Started</button></div>
+              <div class="services_card">
+                <h2>Cloud Computing</h2>
               </div>
-              <div class="services__card">
-                <h2>Infinite Choices</h2>
-                <p>1000's of colors</p>
-                <div class="services__btn"><button>Get Started</button></div>
+              <div class="services_card">
+                <h2>Hard-Working</h2>
+              </div>
+              <div class="services_card">
+                <h2>Focused</h2>
               </div>
             </div>
           </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <div class="contact">
+        <div class="contact_content">
+          <h1>Contact</h1>
+          <p>PO Box 154, 7595 Belspring Rd, Belspring VA, 24058 | (540) 739-5106 | drlinkous02@gmail.com | </p>
+        </div>
+      </div>
+    </div>
   
     <script src="app.js"></script>
 </body>
