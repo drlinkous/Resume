@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Website Navbar</title>
+    <title>Resume</title>
 </head>
 <body>
     <div class="nav_container">
@@ -19,12 +19,13 @@
                 <span class="bar"></span>
             </div>
             <ul class="nav_menu">
-                <li class="navbar_item"><a href="#about" class="nav_links" id="about-page">About Me</a></li>
-                <li class="navbar_item"><a href="#education" class="nav_links" id="education-page">Education</a></li>
-                <li class="navbar_item"><a href="#experience" class="nav_links" id="exp-page">Experience</a></li>
-                <li class="navbar_item"><a href="#services" class="nav_links" id="services-page">Skills & Abilities</a></li>
-                <li class="navbar_item"><a href="#contact" class="nav_links" id="contact-page">Contact</a></li>
-            </ul>
+              <li class="navbar_item"><a href="#about" class="nav_links">About Me</a></li>
+              <li class="navbar_item"><a href="#education" class="nav_links">Education</a></li>
+              <li class="navbar_item"><a href="#experience" class="nav_links">Experience</a></li>
+              <li class="navbar_item"><a href="#skills" class="nav_links">Skills & Abilities</a></li>
+              <li class="navbar_item"><a href="#contact" class="nav_links">Contact</a></li>
+          </ul>
+          
         </nav>
     </div>
     <!-- About Section -->
@@ -39,50 +40,88 @@
 
 
     <!-- Education -->
-    <div class="edu" id="edu">
+    <div class="edu" id="education">
       <div class="edu_container">
         <div class="edu_content">
           <h1>Education</h1>
-          <p>INFORMATION TECHNOLOGY AAS| GRADUATED MAY 2023 |NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA, 24084</p>
+          <p>I graduated May of 2023 from New River Community College with a Information Technology AAS Degree </p>
         </div>
+        <div><img src="New River.jpg" alt="New River" width="425" height="300"></div>
       </div>
     </div>
 
-            <!-- Experiance Section -->
-            <div class="exp" id="exp">
-              <h1>Experience</h1>
-              <div class="exp_wrapper">
-                <div class="exp_card">
-                  <h2>COMPUTER TECHNICIAN II | NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA | JUNE 2021 – AUGUST 2021 (UNITED WAY INTERNSHIP)</h2>
-                  <h3>-Replaced and Imaged computers</h3>
-                    <h4>-Worked in Adobe Systems</h4>
-                    <h5>-Organized and Labeled Hardware</h5>
-                </div>
-                <div class="exp_card">
-                  <h2>COMPUTER TECHNICIAN | NEW RIVER COMMUNITY COLLEGE, DUBLIN, VA | JUNE 2019 – AUGUST 2019 (UNITED WAY INTERNSHIP)</h2>
-                  <h3>-Replaced and Imaged computers<h3>
-                </div>
-              </div>
-            </div>
+<!-- Experiance Section -->
+<div class="exp" id="experience">
+  <h1>Experience</h1>
+  <div class="exp_wrapper">
+    <div class="exp_card">
+      <h2>Computer Technician June 2019 – August 2019 (UNITED WAY INTERNSHIP)</h2>
+      <h3>New River Community College, Dublin, VA </h3>
+      <button type="button" class="btn" onclick="openPopup(document.getElementById('popup1'))">Details</button>
+    </div>
+    <div class="popup" id="popup1">
+      <h2>Replaced and Imaged computers</h2>
+      <button type="button" onclick="closePopup(document.getElementById('popup1'))">Ok</button>
+    </div>
+    <div class="exp_card">
+      <h2>Computer Technician II June 2021 – August 2021 (UNITED WAY INTERNSHIP)</h2>
+      <h3>New River Community College, Dublin, VA </h3>
+      <button type="button" class="btn" onclick="openPopup(document.getElementById('popup2'))">Details</button>
+    </div>
+    <div class="popup" id="popup2">
+      <h2>Replaced and Imaged computers</h2>
+      <h3>Worked in Adobe Systems</h3>
+      <h4>Organized and Labeled Hardware</h4>
+      <button type="button" onclick="closePopup(document.getElementById('popup2'))">Ok</button>
+    </div>
+  </div>
+</div>
+
 
         <!-- Services Section -->
-        <div class="services" id="services">
+        <!-- BUGGIEST SECTION -->
+        <div class="services" id="skills">
             <h1>Skills & Abilities</h1>
             <div class="services_wrapper">
               <div class="services_card">
                 <h2>Coding</h2>
+                <button type="button" class="btn" onclick="openPopup(document.getElementById('popup3'))">Details</button>
+                <div class="popup" id="popup3">
+                  <p>I write in many differnet coding language like Javascript, Java, Python, HTML, CSS, SQL, and PHP.</p>
+                  <button type="button" onclick="closePopup(document.getElementById('popup3'))">Close</button>
+              </div>
               </div>
               <div class="services_card">
                 <h2>IT Hardware</h2>
+                <button type="button" class="btn" onclick="openPopup(document.getElementById('popup4'))">Details</button>
+                <div class="popup" id="popup4">
+                  <p>I have always been fascinated in computers and computer related activities. I have helped my friends fix computers since I was in middle school and high school. When I got to college though I really started seeing what I could do with my skills. I have now not only helped others but have trained them how to help there friends and family</p>
+                  <button type="button" onclick="closePopup(document.getElementById('popup4'))">Close</button>
+              </div>
               </div>
               <div class="services_card">
                 <h2>Cloud Computing</h2>
+                <button type="button" class="btn" onclick="openPopup(document.getElementById('popup5'))">Details</button>
+                <div class="popup" id="popup5">
+                  <p>I have little experience in cloud computing but I do hope to sharpen my skills. I have worked with AWS in college and made DNS and NTP servers. I've also worked with Virtual Machines to host servers.</p>
+                  <button type="button" onclick="closePopup(document.getElementById('popup5'))">Close</button>
+              </div>
               </div>
               <div class="services_card">
                 <h2>Hard-Working</h2>
+                <button type="button" class="btn" onclick="openPopup(document.getElementById('popup6'))">Details</button>
+                <div class="popup" id="popup6">
+                  <p>When I am starting something new I try my best to learn as much as I can. After I learn I can adapt to an environment and work my hardest to complete my tasks.</p>
+                  <button type="button" onclick="closePopup(document.getElementById('popup6'))">Close</button>
+              </div>
               </div>
               <div class="services_card">
                 <h2>Focused</h2>
+                <button type="button" class="btn" onclick="openPopup(document.getElementById('popup7'))">Details</button>
+                <div class="popup" id="popup7">
+                  <p>I am focused oriented and will pay attention to my tasks and see how to improve my duties.</p>
+                  <button type="button" onclick="closePopup(document.getElementById('popup7'))">Close</button>
+              </div>
               </div>
             </div>
           </div>
@@ -100,3 +139,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+

@@ -15,20 +15,29 @@
 }
 /* NavBar */
 .nav_container {
-    width: 100%;
-    background-color: var(--darkgray);
+  width: 100%;
+  background-color: var(--darkgray);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
 }
 
-.navbar{
-    display: grid;
-    grid-template-columns: 0.2fr auto 1fr;
-    align-items: center;
-    height: 80px;
-    width: 90%;
-    max-width: 1720px;
-    margin: 0 auto;
-    position: sticky;
+/* OR */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  /* Your existing styles */
 }
+
 
 #navbar_logo{
     color: var(--white);
@@ -119,10 +128,6 @@
         background-color: var(--pink);
         color: var(--white);
         transition: all 0.4s ease-out;
-    }
-
-    .navbar{
-        width: 100%;
     }
 
     .nav_links-btn{
@@ -360,7 +365,9 @@
     transition: 0.3s ease-in;
   }
   
-  
+  .exp_card h2 {
+    text-align: center;
+  }
   .exp_card h2 {
     text-align: center;
   }
@@ -400,6 +407,74 @@
     .exp_wrapper {
       grid-template-columns: 1fr;
     }
+  }
+
+  .btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+  }
+
+  .popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 1000;
+  }  
+  
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+  }
+
+
+
+  .popup h2{
+    color: #000000;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+  .popup h3{
+    color: rgb(0, 0, 0) !important;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+  .popup h4{
+    color: rgb(0, 0, 0) !important;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+  
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
 /* Service Section */
@@ -541,3 +616,7 @@
       font-size: 2rem;
       font-weight: 700;
     }
+    img {
+      width: 100%;
+    }
+    
