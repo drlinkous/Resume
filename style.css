@@ -4,7 +4,6 @@
     --pink: #f9423D;
     --white: #fff;
     --lightred: #f9433dcc;
-    --pink: #fe3b6f;
 }
 
 * {
@@ -92,18 +91,19 @@
         position: relative;
     }
 
-    .nav_menu{
-        display: grid;
-        grid-template-columns: auto;
-        background: var(--pink);
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: -100%;
-        opacity: 0;
-        transition: all 0.5s ease;
-    }
+    .nav_menu {
+      display: grid;
+      grid-template-columns: auto;
+      background: var(--pink);
+      margin: 0;
+      width: 100%;
+      position: fixed; /* Change from absolute to fixed */
+      top: 80px; /* Adjust as needed to position below the navbar */
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+  }
+  
 
     #navbar_logo{
         margin-left: 20px;
@@ -464,6 +464,9 @@
   }
   
   .popup button{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
