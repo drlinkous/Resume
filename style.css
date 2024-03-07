@@ -464,9 +464,6 @@
   }
   
   .popup button{
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
