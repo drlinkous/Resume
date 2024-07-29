@@ -296,15 +296,15 @@
     }
     
   /* Experiance Section */
-  .exp {
-    background: var(--black);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 10rem 0;
-  }
+.exp {
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  height: 100%;
+  padding: 10rem 0;
+}
   
   .exp h1 {
     background-color: var(--pink);
