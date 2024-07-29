@@ -369,17 +369,17 @@
     transition: 0.3s ease-in;
   }
   
-  @media screen and (max-width: 1300px) {
-    .exp_wrapper {
-      grid-template-columns: 1fr 1fr;
-    }
+@media screen and (max-width: 1300px) {
+  .exp_wrapper {
+    grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
   }
-  
-  @media screen and (max-width: 768px) {
-    .exp_wrapper {
-      grid-template-columns: 1fr;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .exp_wrapper {
+    grid-template-columns: 1fr; /* Single column on small screens */
   }
+}
   .btn{
     padding: 10px 60px;
     background: #fff;
