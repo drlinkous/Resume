@@ -1,4 +1,4 @@
-:root {
+:root{
     --black: #131313;
     --darkgray: #212329;
     --pink: #f9423D;
@@ -9,7 +9,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
     font-family: 'Nunito', sans-serif;
 }
 /* NavBar */
@@ -325,7 +325,7 @@
     }
     
   /* Experiance Section */
-.exp {
+  .exp {
     background: var(--black);
     display: flex;
     flex-direction: column;
@@ -333,7 +333,7 @@
     align-items: center;
     height: 100%;
     padding: 10rem 0;
-}
+  }
   
   .exp h1 {
     background-color: var(--pink);
@@ -346,21 +346,17 @@
     font-size: 2.5rem;
   }
   
-.exp_wrapper {
+  .exp_wrapper {
+    margin: center; 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* This makes sure items are responsive and fit well */
-    gap: 20px; /* Adds spacing between cards */
-    justify-content: center; /* Center horizontally */
-    align-items: start; /* Adjust alignment if needed */
-    width: 100%; /* Ensure it takes up full width */
-    max-width: 1300px; /* Constrain width if necessary */
-}
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
   
-.exp_card {
-    margin: 0 auto; /* Center cards within the grid */
+  .exp_card {
+    margin: 100px;
     height: 425px;
-    width: 100%; /* Adjust to fill the container properly */
-    max-width: 550px; /* Max width to ensure cards are not too wide */
+    width: 550px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -368,8 +364,7 @@
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
-}
-
+  }
   
   .exp_card h2 {
     text-align: center;
@@ -403,17 +398,17 @@
     transition: 0.3s ease-in;
   }
   
-@media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1300px) {
     .exp_wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+      grid-template-columns: 1fr 1fr;
     }
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .exp_wrapper {
-        grid-template-columns: 1fr; /* Single column on small screens */
+      grid-template-columns: 1fr;
     }
-}
+  }
 
   .btn{
     padding: 10px 60px;
@@ -625,4 +620,3 @@
     img {
       width: 100%;
     }
-    
