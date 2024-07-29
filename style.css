@@ -5,7 +5,6 @@
     --white: #fff;
     --lightred: #f9433dcc;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,9 +19,7 @@
   top: 0;
   z-index: 1000; /* Ensure the navbar is above other content */
 }
-
 /* OR */
-
 .navbar {
   display: grid;
   grid-template-columns: 0.2fr auto 1fr;
@@ -36,14 +33,11 @@
   z-index: 1000; /* Ensure the navbar is above other content */
   /* Your existing styles */
 }
-
-
 #navbar_logo{
     color: var(--white);
     justify-self: start;
     margin-left: 20px;
 }
-
 .nav_menu{
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -52,23 +46,19 @@
     width: 70%;
     justify-self: end;
 }
-
 .nav_links{
     color: white;
     text-decoration: none;
 }
-
 .nav_links:hover {
     color: var(--pink);
     transition: all 0.2s ease-out;
 }
-
 .nav_links_btn{
     background-color: var(--brightred);
     padding: 6px 16px;
     border-radius: 4px;
 }
-
 .nav_links-btn:hover{
     background-color: transparent;
     color: var(--white);
@@ -77,7 +67,6 @@
     border: solid 1x var(--pink);
     transition: all 0.3s ease-out;
 }
-
 .menu_toggle .bar{
     width: 25px;
     height: 3px;
@@ -85,12 +74,10 @@
     transition: all 0.2s ease-out;
     background: var(--white);
 }
-
 @media screen and (max-width: 768px){
     .nav_container {
         position: relative;
     }
-
     .nav_menu {
       display: grid;
       grid-template-columns: auto;
@@ -104,32 +91,26 @@
       transition: all 0.5s ease;
   }
   
-
     #navbar_logo{
         margin-left: 20px;
     }
-
     .nav_menu.active{
         background: var(--darkgray);
         left: 0;
         opacity: 1;
         transition: all 0.5 ease;
-
     }
-
     .nav_links{
         text-align: center;
         line-height: 60px;
         width: 100%;
         display: table;
     }
-
     .nav_links:hover{
         background-color: var(--pink);
         color: var(--white);
         transition: all 0.4s ease-out;
     }
-
     .nav_links-btn{
         border: none;
         padding: 0;
@@ -138,7 +119,6 @@
         color: var(--white);
         transition: all 0.4s ease-out;
     }
-
     .nav_links-btn:hover{
         border: none;
         padding: 0;
@@ -147,27 +127,22 @@
         color: var(--white);
         transition: all 0.4s ease-out;
     }
-
     #mobile_menu{
         position: absolute;
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
     }
-
     .menu_toggle .bar{
         display: block;
         cursor: pointer;
     }
-
     .menu_toggle:hover{
         cursor: pointer;
     }
-
     #mobile_menu.is-active .bar:nth-child(2){
         opacity: 0;
     }
-
     #mobile_menu.is-active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
@@ -176,7 +151,6 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
   /* About Section */
   .main {
     background-color: var(--black);
@@ -212,7 +186,6 @@
     text-transform: uppercase;
     margin-bottom: 32px;
   }
-
   
   .main_content p {
     margin-top: 1rem;
@@ -279,9 +252,7 @@
     .main_content p {
       margin-top: 2rem;
     }
-
   }
-
     /* Education Section */
     .edu {
       background-color: var(--black);
@@ -345,7 +316,7 @@
     margin-bottom: 5rem;
     font-size: 2.5rem;
   }
-  
+
   .exp_wrapper {
     margin: center; 
     display: grid;
@@ -373,13 +344,11 @@
     text-align: center;
   }
   
-
   .exp_card h3 {
     text-align: center;
     margin-top: 24px;
     font-size: 20px;
   }
-
   .exp_card h4 {
     text-align: center;
     margin-top: 24px;
@@ -409,7 +378,6 @@
       grid-template-columns: 1fr;
     }
   }
-
   .btn{
     padding: 10px 60px;
     background: #fff;
@@ -420,7 +388,6 @@
     font-weight: 500;
     border-radius: 30px;
   }
-
   .popup {
     width: 400px;
     background: white;
@@ -442,9 +409,6 @@
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
   }
-
-
-
   .popup h2{
     color: #000000;
     font-size: 38px;
@@ -477,7 +441,6 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-
 /* Service Section */
   .services {
   background: var(--black);
@@ -488,7 +451,6 @@
   height: 100%;
   padding: 10rem 0;
 }
-
 .services h1 {
   background-color: var(--pink);
   background-size: 100%;
@@ -499,13 +461,11 @@
   margin-bottom: 5rem;
   font-size: 2.5rem;
 }
-
 .services_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
-
 .services_card {
   margin: 5px;
   height: 425px;
@@ -518,7 +478,6 @@
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   transition: 0.3s ease-in;
 }
-
 .services_card:nth-child(2) {
   background-image: linear-gradient(
     -225deg,
@@ -528,7 +487,6 @@
     #fff800 100%
   );
 }
-
 .services_card:nth-child(3) {
   background-image: linear-gradient(
     -225deg,
@@ -538,7 +496,6 @@
     #d6d6c5 100%
   );
 }
-
 .services_card:nth-child(4) {
   background-image: linear-gradient(
     -225deg,
@@ -548,34 +505,28 @@
     #fff800 100%
   );
 }
-
 .services_card h2 {
   text-align: center;
 }
-
 .services_card p {
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
 }
-
 .services_card:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
 }
-
 @media screen and (max-width: 1300px) {
   .services_wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 768px) {
   .services_wrapper {
     grid-template-columns: 1fr;
   }
 }
-
     /* Contact Section */
     .contact {
       background-color: var(--black);
@@ -620,3 +571,4 @@
     img {
       width: 100%;
     }
+    
