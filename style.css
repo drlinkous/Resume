@@ -401,17 +401,17 @@
     transition: 0.3s ease-in;
   }
   
-  @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .exp_wrapper {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .exp_wrapper {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on small screens */
     }
-  }
+}
 
   .btn{
     padding: 10px 60px;
