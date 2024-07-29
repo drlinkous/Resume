@@ -1,4 +1,4 @@
-:root{
+:root {
     --black: #131313;
     --darkgray: #212329;
     --pink: #f9423D;
@@ -9,7 +9,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0
     font-family: 'Nunito', sans-serif;
 }
 /* NavBar */
