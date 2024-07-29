@@ -319,11 +319,12 @@
 
 .exp_wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the number of columns based on screen size */
+  grid-template-columns: 1fr 2fr 1fr; /* Adjust the proportions */
   gap: 20px; /* Space between cards */
+  justify-content: center; /* Center grid items within the wrapper */
   width: 100%;
-  max-width: 1200px; /* Width of the grid container */
-  margin: 0 auto; /* Center the grid container horizontally */
+  max-width: 1300px; /* Optional: Ensure it does not exceed this width */
+  margin: 0 auto;
 }
   
 .exp_card {
