@@ -317,25 +317,27 @@
     font-size: 2.5rem;
   }
 
-  .exp_wrapper {
-    margin: auto; 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
+.exp_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the number of columns based on screen size */
+  gap: 20px; /* Space between cards */
+  width: 100%;
+  max-width: 1200px; /* Width of the grid container */
+  margin: 0 auto; /* Center the grid container horizontally */
+}
   
-  .exp_card {
-    margin: 100px;
-    height: 425px;
-    width: 550px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    transition: 0.3s ease-in;
-  }
+.exp_card {
+  height: 425px;
+  width: 100%; /* Make cards take full width of the grid cell */
+  max-width: 550px; /* Limit the card width */
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+}
   
   .exp_card h2 {
     text-align: center;
