@@ -356,10 +356,11 @@
     max-width: 1300px; /* Constrain width if necessary */
 }
   
-  .exp_card {
-    margin: 100px;
+.exp_card {
+    margin: 0 auto; /* Center cards within the grid */
     height: 425px;
-    width: 550px;
+    width: 100%; /* Adjust to fill the container properly */
+    max-width: 550px; /* Max width to ensure cards are not too wide */
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -367,7 +368,8 @@
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
     transition: 0.3s ease-in;
-  }
+}
+
   
   .exp_card h2 {
     text-align: center;
