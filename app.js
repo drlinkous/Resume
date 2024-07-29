@@ -14,6 +14,7 @@ var popup4 = document.getElementById("popup4");
 var popup5 = document.getElementById("popup5");
 var popup6 = document.getElementById("popup6");
 var popup7 = document.getElementById("popup7");
+var popup7 = document.getElementById("popup8");
 
 function openPopup(popup){
   popup.classList.add("open-popup");
